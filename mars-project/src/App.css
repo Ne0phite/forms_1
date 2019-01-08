@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.form {
+  display: grid;
+  width: 40%;
+  margin: auto;
+}
+
+#reasons {
+  height: 200px;
+  text-align: center;
+}
