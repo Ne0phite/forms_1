@@ -4,8 +4,9 @@
 
 .form {
   display: grid;
-  width: 40%;
+  width: 45%;
   margin: auto;
+  text-align: left;
 }
 
 #reasons {
