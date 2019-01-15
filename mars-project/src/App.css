@@ -1,15 +1,149 @@
 .App {
   text-align: center;
+  z-index: 1;
+  position: relative;
 }
 
-.form {
+body {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA00407_hires.jpg)
+}
+
+.form-div {
   display: grid;
-  width: 45%;
+  max-width: 40%;
+  min-width: 450px;
   margin: auto;
   text-align: left;
+  opacity: 1;
+  color: white;
+}
+
+.response{
+  display: grid;
+  max-width: 30%;
+  min-width: 300px;
+  margin: auto;
+  text-align: left;
+  opacity: 1;
+  color: white;
+}
+
+.response p {
+  margin-bottom: 0px;
+}
+
+span {
+  padding: 5px;
+}
+
+.confirm-page-buttons {
+  display: inline-block;
+}
+ /* input, select {
+  background-color: transparent;
+  box-sizing: border-box;
+  color: black;
+  border-radius: 5px;
+  width: 100%;
+  margin: 2px 2px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+} */
+
+ input[type='text'] {
+  background-color: transparent;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 12px;
+  color: black;
 }
 
 #reasons {
   height: 200px;
+  width: 100%;
   text-align: center;
 }
+
+button {
+  align: center;
+  width: 500px;
+  background-color: brown;
+  color: black;
+  padding: 14px 20px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-element {
+  margin: 10px 0;
+}
+
+/* .slideshow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite;
+}
+
+.slideshow li:nth-child(1) {
+  background-image: url(https://images.unsplash.com/photo-1532779007449-43cd38f80988?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+}
+.slideshow li:nth-child(2) {
+  background-image: url(https://images.unsplash.com/photo-1527737071469-99ca92035fd6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  animation-delay: 10s;
+}
+.slideshow li:nth-child(3) {
+  background-image: url(https://farm2.staticflickr.com/1855/43002156820_f086d0206a.jpg);
+  animation-delay: 20s;
+}
+.slideshow li:nth-child(4) {
+  background-image: url(https://pixabay.com/get/e13db50828fd1c22d2524518b7444795ea76e5d004b0144592f4c27da1edb7_340.jpg);
+  animation-delay: 30s;
+}
+.slideshow li:nth-child(5) {
+  background-image: url(https://pixabay.com/get/e834b10e2ae90021d85a5854ee4d459fe270e7c818b4154691f3c57fa7ef_340.jpg);
+  animation-delay: 40s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+} */
